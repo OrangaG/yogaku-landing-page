@@ -10,10 +10,10 @@
   <body>
     <!-- Header -->
     <header
-      class="grid content-center h-20 fixed top-0 left-0 w-full z-10 bg-green-dark 2xl:max-container ml-auto"
+      class="grid content-center h-20 fixed top-0 left-0 w-full z-10 bg-green-dark 2xl:max-container 2xl:static"
     >
       <nav
-        class="relative flex justify-between items-center h-14 m-5 bg-green-dark"
+        class="relative flex justify-between items-center h-14 m-5 bg-green-dark z-20"
       >
         <div class="flex flex-col">
           <img
@@ -52,32 +52,32 @@
     </header>
 
     <!-- Hero section -->
-    <section class="pt-24 bg-green-dark min-h-[100vh]" id="home">
-      <div class="mx-5 grid gap-6 2xl:max-container">
-        <h1
-          class="text-center uppercase text-4xl leading-2 text-gray-dark font-bold"
-        >
-          New Experience
-        </h1>
-        <p class="text-center text-gray-light">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nesciunt
-          debitis. Quidem aliquid ducimus sunt nihil porro molestias autem
-          veniam.
-        </p>
-        <a
-          href="#"
-          class="text-white2 py-2 px-4 bg-gray-dark rounded-md w-fit place-self-center z-10"
-          >Register Now</a
-        >
-        <div class="mt-[-2rem]">
-          <img src="./hero-img.webp" alt="woman doing yoga pose" />
+    <section
+      class="bg-green-dark min-h-screen bg-hero bg-no-repeat bg-center bg-contain 2xl:max-container"
+      id="home"
+    >
+      <div class="grid items-center min-h-screen mx-5 2xl:max-container">
+        <div class="grid gap-4">
+          <h1
+            class="text-center uppercase text-4xl leading-2 text-gray-dark font-bold"
+          >
+            New Experience
+          </h1>
+          <p class="text-center text-gray-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+            nesciunt debitis. Quidem aliquid ducimus sunt nihil porro molestias
+            autem veniam.
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <a href="#" class="btn">Register Now </a>
         </div>
       </div>
     </section>
 
-    <main class="2xl:max-container mx-5">
+    <main class="mx-5 2xl:max-container">
       <!-- About Section -->
-      <section id="about">
+      <section class="section-padding" id="about">
         <h2>Our Stats</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
@@ -101,8 +101,8 @@
       </section>
 
       <!-- Product section -->
-      <section id="product">
-        <h2>About Us</h2>
+      <section class="section-padding" id="product">
+        <h2>Products</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
           beatae similique necessitatibus modi doloremque ut omnis laudantium
@@ -155,7 +155,7 @@
       </section>
 
       <!-- Promo -->
-      <section id="promo">
+      <section class="section-padding" id="promo">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum minus
           nihil explicabo doloribus unde, laudantium illo optio fugiat corporis,
@@ -167,23 +167,23 @@
       </section>
 
       <!-- Contact  -->
-      <section id="contact">
+      <section class="section-padding" id="contact">
         <h2>Don't Miss Our Update</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
           possimus obcaecati repellat voluptatem vel, ullam nulla error sapiente
           et harum.
         </p>
-        <form class="flex justify-center">
-          <input type="email" placeholder="Your Email" />
-          <button type="button">Subscribe</button>
+        <form class="flex justify-between">
+          <input class="w-3/4" type="email" placeholder="Your Email" />
+          <button type="button" class="btn">Subscribe</button>
         </form>
       </section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <div class="max-container mx-5">
+      <div class="mx-5 2xl:max-container">
         <div>
           <h2>Yogaku</h2>
           <p>

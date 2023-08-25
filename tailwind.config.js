@@ -14,7 +14,11 @@ export default {
       montserrat: ["Montserrat", "sans-serif"],
       roboto: ["Roboto", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        hero: "url('./hero-img.webp')",
+      },
+    },
   },
   plugins: [],
 };

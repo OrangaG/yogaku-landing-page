@@ -17,6 +17,14 @@ html {
   .nav {
     @apply fixed top-0 right-[-100%] transition-[right] ease-in duration-500 h-full w-3/5 pt-40 flex flex-col items-center gap-10 bg-green-dark text-xl md:text-2xl text-gray-dark;
   }
+
+  .btn {
+    @apply text-white2 py-2 px-4 bg-gray-dark rounded-md w-fit;
+  }
+
+  .section-padding {
+    @apply pt-24 pb-4;
+  }
 }
 @layer utilities {
   .active {
