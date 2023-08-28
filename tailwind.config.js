@@ -8,7 +8,6 @@ export default {
       "gray-dark": "#463f58",
       "gray-light": "#4d4f63",
       white: "#f6f4f0",
-      white2: "#cbc9d1",
     },
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"],
@@ -17,6 +16,11 @@ export default {
     extend: {
       backgroundImage: {
         hero: "url('./hero-img.webp')",
+        about: "url('./about-us-img.webp')",
+        promo: "url('./promo-img-removebg-preview.png')",
+      },
+      screens: {
+        "3xl": "1800px",
       },
     },
   },
