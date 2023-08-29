@@ -83,13 +83,13 @@
             <h2 class="mb-6 text-3xl uppercase font-roboto font-bold">
               Our Stats
             </h2>
-            <p class="text-sm">
+            <p class="text-sm text-center md:w-3/5 md:mx-auto">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatibus quod eos soluta consequatur corporis obcaecati dolore
               animi modi saepe ut.
             </p>
           </div>
-          <div class="flex justify-center flex-wrap gap-4">
+          <div class="flex justify-center flex-wrap gap-16 md:justify-around">
             <div>
               <h3 class="text-3xl font-bold">1,534</h3>
               <p class="text-xs">Active Members</p>
@@ -126,7 +126,7 @@
           repellat similique doloribus, fugiat libero assumenda est a autem.
           Commodi.
         </p>
-        <div class="mt-4 flex flex-wrap justify-center gap-4">
+        <div class="my-8 flex flex-wrap justify-center gap-4">
           <div class="product-card">
             <h3 class="text-3xl font-bold font-roboto">Bronze</h3>
             <div class="flex justify-center">
@@ -182,31 +182,38 @@
             corporis, debitis in eaque laboriosam commodi culpa! Officiis
             consequatur odit dignissimos quas.
           </p>
-          <p>&mdash; Leona Woods</p>
+          <p class="font-bold">&mdash; Leona Woods</p>
         </div>
       </section>
 
       <!-- Contact  -->
-      <section class="section-padding" id="contact">
-        <h2>Don't Miss Our Update</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          possimus obcaecati repellat voluptatem vel, ullam nulla error sapiente
-          et harum.
-        </p>
-        <form class="flex justify-between">
-          <input class="w-3/4" type="email" placeholder="Your Email" />
-          <button type="button" class="btn">Subscribe</button>
-        </form>
+      <section class="section-padding bg-green" id="contact">
+        <div class="mx-5 text-center grid gap-6 pb-6">
+          <h2 class="text-3xl uppercase font-bold">Don't Miss Our Update</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            possimus obcaecati repellat voluptatem vel, ullam nulla error
+            sapiente et harum.
+          </p>
+          <form class="flex justify-center">
+            <input class="w-3/6 pl-4" type="email" placeholder="Your Email" />
+            <button
+              type="button"
+              class="btn rounded-tl-none rounded-bl-none uppercase font-roboto font-bold"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-      <div class="mx-5 2xl:max-container">
+    <footer class="bg-gray-light py-16 font-montserrat">
+      <div class="mx-5 text-white grid grid-cols-1 gap-8 2xl:max-container">
         <div>
-          <h2>Yogaku</h2>
-          <p>
+          <h2 class="text-2xl uppercase font-roboto font-bold mb-4">Yogaku</h2>
+          <p class="text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
             incidunt velit, voluptates repellendus ipsum quo eos impedit optio
             iusto officia ratione accusamus vero cum sint quia eum inventore
@@ -214,47 +221,56 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3">
-          <div>
-            <h2>About</h2>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div class="flex flex-col gap-2 text-sm">
+            <h3 class="text-xl font-roboto font-bold uppercase">About</h3>
             <a href="#">History</a><a href="#">Our team</a
             ><a href="#">Brand Guidelines</a><a href="#">Terms and Conditions</a
             ><a href="#">Privacy Policy</a>
           </div>
-          <div>
-            <h2>Services</h2>
+          <div class="flex flex-col gap-2 text-sm">
+            <h3 class="text-xl font-roboto font-bold uppercase">Services</h3>
             <a href="#">How To Order</a><a href="#">Our product</a
             ><a href="#">Order Status</a><a href="#">Promo</a
             ><a href="#">Payment Method</a>
           </div>
-          <div>
-            <h2>Follow</h2>
-            <div class="flex gap-1">
-              <img
-                src="./facebook-fill.svg"
-                alt="facebook icon"
-                width="24px"
-              /><a href="#" width="24px">Facebook</a>
+          <div class="flex flex-col gap-2 text-sm">
+            <h3 class="text-xl font-roboto font-bold uppercase">Follow</h3>
+            <div class="flex items-center gap-2">
+              <div class="footer-icon">
+                <img
+                  src="./facebook-fill.svg"
+                  alt="facebook icon"
+                  width="18px"
+                />
+              </div>
+              <a href="#" width="24px">Facebook</a>
             </div>
-            <div class="flex gap-1">
-              <img src="./twitter-fill.svg" alt="twitter icon" width="24px" /><a
-                href="#"
-                >Twitter</a
-              >
+            <div class="flex items-center gap-2">
+              <div class="footer-icon">
+                <img src="./twitter-fill.svg" alt="twitter icon" width="18px" />
+              </div>
+              <a href="#">Twitter</a>
             </div>
-            <div class="flex gap-1">
-              <img
-                src="./instagram-line.svg"
-                alt="instagram icon"
-                width="24px"
-              /><a href="#">Instagram</a>
+            <div class="flex items-center gap-2">
+              <div class="footer-icon">
+                <img
+                  src="./instagram-line.svg"
+                  alt="instagram icon"
+                  width="18px"
+                />
+              </div>
+              <a href="#">Instagram</a>
             </div>
-            <div class="flex gap-1">
-              <img
-                src="./whatsapp-line.svg"
-                alt="whatsapp icon"
-                width="24px"
-              /><a href="#">Whatsapp</a>
+            <div class="flex items-center gap-2">
+              <div class="footer-icon">
+                <img
+                  src="./whatsapp-line.svg"
+                  alt="whatsapp icon"
+                  width="18px"
+                />
+              </div>
+              <a href="#">Whatsapp</a>
             </div>
           </div>
         </div>

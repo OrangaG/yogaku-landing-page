@@ -33,6 +33,10 @@ html {
   .img-bg {
     @apply min-h-screen bg-center bg-contain bg-no-repeat bg-gray-dark bg-blend-multiply;
   }
+
+  .footer-icon {
+    @apply bg-white rounded-full w-6 h-6 flex items-center justify-center;
+  }
 }
 @layer utilities {
   .active {
