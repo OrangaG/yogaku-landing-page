@@ -22,6 +22,10 @@ html {
     @apply text-white py-2 px-4 bg-gray-dark rounded-md w-fit;
   }
 
+  .hero {
+    height: calc(100vh - 5rem);
+  }
+
   .section-padding {
     @apply pt-24 pb-4;
   }
@@ -36,6 +40,13 @@ html {
 
   .footer-icon {
     @apply bg-white rounded-full w-6 h-6 flex items-center justify-center;
+  }
+
+  .scrollup {
+    @apply fixed right-4 -bottom-1/2 bg-green-dark p-2 shadow-md z-10 transition-[bottom] duration-300 ease-in-out cursor-pointer hover:-translate-y-1;
+  }
+  .show-scroll {
+    @apply bottom-12 transition-[bottom] duration-300 ease-in-out;
   }
 }
 @layer utilities {

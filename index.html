@@ -10,10 +10,12 @@
   <body>
     <!-- Header -->
     <header
-      class="grid content-center h-20 fixed top-0 left-0 w-full z-10 bg-green-dark 3xl:max-container 3xl:static"
+      class="bg-green-dark min-h-screen font-montserrat bg-hero bg-no-repeat bg-center bg-contain 3xl:max-container"
+      id="home"
     >
+      <!-- Nav section -->
       <nav
-        class="relative flex justify-between items-center h-14 m-5 bg-green-dark z-20"
+        class="fixed top-0 left-0 w-full px-5 py-8 flex justify-between items-center h-14 bg-green-dark z-20 lg:static lg:justify-between"
       >
         <div class="flex flex-col">
           <img
@@ -23,9 +25,12 @@
             width="24"
             height="24"
           />
-          <p class="font-roboto text-gray-dark">Yogaku</p>
+          <a href="#home" class="font-roboto text-gray-dark">Yogaku</a>
         </div>
-        <ul class="nav" id="nav">
+        <ul
+          class="nav lg:static lg:z-0 lg:p-0 lg:flex-row lg:justify-end lg:text-lg lg:ml-auto"
+          id="nav"
+        >
           <li><a href="#home" class="hover:opacity-70 link">Home</a></li>
           <li><a href="#about" class="hover:opacity-70 link">About Us</a></li>
           <li><a href="#product" class="hover:opacity-70 link">Product</a></li>
@@ -35,7 +40,7 @@
             src="./close-line.svg"
             alt="close icon"
             width="24"
-            class="absolute top-8 right-5 cursor-pointer"
+            class="absolute top-8 right-5 cursor-pointer lg:hidden"
             id="close-btn"
           />
         </ul>
@@ -43,44 +48,49 @@
           <img
             src="./menu-line.svg"
             alt="menu icon"
-            class="right-8 cursor-pointer"
+            class="right-8 cursor-pointer lg:hidden"
             width="24"
             id="menu-btn"
           />
         </div>
       </nav>
-    </header>
 
-    <!-- Hero section -->
-    <section
-      class="bg-green-dark min-h-screen font-montserrat bg-hero bg-no-repeat bg-center bg-contain 3xl:max-container"
-      id="home"
-    >
-      <div class="grid items-center min-h-screen px-5 3xl:max-container">
-        <div class="grid gap-4">
-          <h1
-            class="text-center uppercase text-4xl text-gray-dark font-roboto font-bold"
-          >
-            New Experience
-          </h1>
-          <p class="text-center text-gray-light">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-            nesciunt debitis. Quidem aliquid ducimus sunt nihil porro molestias
-            autem veniam.
-          </p>
+      <!-- Hero section -->
+      <section class="pt-20 lg:pt-20">
+        <div
+          class="grid gap-4 px-5 lg:items-start m-h-[hero] 3xl:max-container"
+        >
+          <div class="sm:mt-4">
+            <h1
+              class="mb-6 text-center uppercase text-4xl text-gray-dark font-roboto font-bold leading-9 md:text-6xl"
+            >
+              New Experience
+            </h1>
+            <p
+              class="text-center text-gray-light md:w-3/4 md:mx-auto lg:w-[600px] lg:mx-auto"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+              nesciunt debitis. Quidem aliquid ducimus sunt nihil porro
+              molestias autem veniam.
+            </p>
+          </div>
         </div>
-        <div class="flex justify-center">
-          <a href="#" class="btn">Register Now </a>
-        </div>
+      </section>
+      <div
+        class="mt-48 flex justify-center uppercase font-bold xs:mt-52 sm:mt-32"
+      >
+        <a href="#" class="btn">Register Now </a>
       </div>
-    </section>
+    </header>
 
     <main class="3xl:max-container font-montserrat text-gray-light">
       <!-- About Section -->
       <section class="bg-about img-bg" id="about">
         <div class="min-h-screen px-5 text-center text-white grid items-center">
           <div>
-            <h2 class="mb-6 text-3xl uppercase font-roboto font-bold">
+            <h2
+              class="mb-6 text-3xl uppercase font-roboto font-bold md:text-5xl"
+            >
               Our Stats
             </h2>
             <p class="text-sm text-center md:w-3/5 md:mx-auto">
@@ -91,16 +101,16 @@
           </div>
           <div class="flex justify-center flex-wrap gap-16 md:justify-around">
             <div>
-              <h3 class="text-3xl font-bold">1,534</h3>
-              <p class="text-xs">Active Members</p>
+              <h3 class="text-3xl font-bold md:text-5xl">1,534</h3>
+              <p class="text-xs md:text-base">Active Members</p>
             </div>
             <div>
-              <h3 class="text-3xl font-bold">99</h3>
-              <p class="text-xs">Yoga Country</p>
+              <h3 class="text-3xl font-bold md:text-5xl">99</h3>
+              <p class="text-xs md:text-base">Yoga Country</p>
             </div>
             <div>
-              <h3 class="text-3xl font-bold">150</h3>
-              <p class="text-xs">Workshop</p>
+              <h3 class="text-3xl font-bold md:text-5xl">150</h3>
+              <p class="text-xs md:text-base">Workshop</p>
             </div>
           </div>
         </div>
@@ -108,25 +118,25 @@
 
       <!-- Product section -->
       <section class="section-padding bg-green px-5 text-center" id="product">
-        <h2 class="text-3xl uppercase font-bold mb-4">Products</h2>
-        <p>
+        <h2 class="text-3xl uppercase font-bold mb-4 md:text-5xl">Products</h2>
+        <p class="w-3/5 mx-auto">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
           beatae similique necessitatibus modi doloremque ut omnis laudantium
           recusandae mollitia optio?
         </p>
 
-        <div class="flex flex-wrap gap-4 justify-center my-8">
+        <div class="flex flex-wrap gap-4 justify-center my-8 md:gap-8">
           <img src="./product-img-1.webp" alt="yogi posing" class="w-72" />
           <img src="./product-img-2.webp" alt="yogi posing" class="w-72" />
           <img src="./product-img-3.webp" alt="yogi posing" class="w-72" />
         </div>
-        <p>
+        <p class="w-3/5 mx-auto">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
           cupiditate iste quod vitae alias et nesciunt aperiam velit rem commodi
           repellat similique doloribus, fugiat libero assumenda est a autem.
           Commodi.
         </p>
-        <div class="my-8 flex flex-wrap justify-center gap-4">
+        <div class="my-8 flex flex-wrap justify-center gap-4 md:gap-7">
           <div class="product-card">
             <h3 class="text-3xl font-bold font-roboto">Bronze</h3>
             <div class="flex justify-center">
@@ -175,28 +185,36 @@
       <!-- Promo -->
       <section class="bg-promo img-bg bg-bottom" id="promo">
         <div class="min-h-screen pt-32 px-5 text-white text-end">
-          <h2 class="text-3xl uppercase font-bold mb-4">Our Fans</h2>
-          <p class="text-sm mb-2 w-3/5 ml-auto">
+          <h2 class="text-3xl uppercase font-bold mb-4 md:text-5xl">
+            Our Fans
+          </h2>
+          <p class="text-sm mb-2 w-3/5 ml-auto lg:w-[600px]">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
             minus nihil explicabo doloribus unde, laudantium illo optio fugiat
             corporis, debitis in eaque laboriosam commodi culpa! Officiis
             consequatur odit dignissimos quas.
           </p>
-          <p class="font-bold">&mdash; Leona Woods</p>
+          <p class="font-bold uppercase md:text-lg">&mdash; Leona Woods</p>
         </div>
       </section>
 
       <!-- Contact  -->
       <section class="section-padding bg-green" id="contact">
         <div class="mx-5 text-center grid gap-6 pb-6">
-          <h2 class="text-3xl uppercase font-bold">Don't Miss Our Update</h2>
-          <p>
+          <h2 class="text-3xl uppercase font-roboto font-bold md:text-5xl">
+            Don't Miss Our Update
+          </h2>
+          <p class="w-3/5 mx-auto md:w-[500px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
             possimus obcaecati repellat voluptatem vel, ullam nulla error
             sapiente et harum.
           </p>
           <form class="flex justify-center">
-            <input class="w-3/6 pl-4" type="email" placeholder="Your Email" />
+            <input
+              class="w-3/6 pl-4 md:w-[400px]"
+              type="email"
+              placeholder="Your Email"
+            />
             <button
               type="button"
               class="btn rounded-tl-none rounded-bl-none uppercase font-roboto font-bold"
@@ -210,10 +228,17 @@
 
     <!-- Footer -->
     <footer class="bg-gray-light py-16 font-montserrat">
-      <div class="mx-5 text-white grid grid-cols-1 gap-8 2xl:max-container">
+      <div
+        class="mx-5 text-white grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-0 2xl:max-container"
+      >
         <div>
-          <h2 class="text-2xl uppercase font-roboto font-bold mb-4">Yogaku</h2>
-          <p class="text-sm">
+          <a
+            href="#home"
+            class="text-2xl uppercase font-roboto font-bold mb-4 md:text-3xl"
+          >
+            Yogaku
+          </a>
+          <p class="text-sm w-3/5 md:text-base md:mt-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
             incidunt velit, voluptates repellendus ipsum quo eos impedit optio
             iusto officia ratione accusamus vero cum sint quia eum inventore
@@ -221,21 +246,27 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
-          <div class="flex flex-col gap-2 text-sm">
-            <h3 class="text-xl font-roboto font-bold uppercase">About</h3>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+          <div class="flex flex-col gap-2 text-sm md:text-base">
+            <h3 class="text-xl font-roboto font-bold uppercase md:text-3xl">
+              About
+            </h3>
             <a href="#">History</a><a href="#">Our team</a
             ><a href="#">Brand Guidelines</a><a href="#">Terms and Conditions</a
             ><a href="#">Privacy Policy</a>
           </div>
-          <div class="flex flex-col gap-2 text-sm">
-            <h3 class="text-xl font-roboto font-bold uppercase">Services</h3>
+          <div class="flex flex-col gap-2 text-sm md:text-base">
+            <h3 class="text-xl font-roboto font-bold uppercase md:text-3xl">
+              Services
+            </h3>
             <a href="#">How To Order</a><a href="#">Our product</a
             ><a href="#">Order Status</a><a href="#">Promo</a
             ><a href="#">Payment Method</a>
           </div>
-          <div class="flex flex-col gap-2 text-sm">
-            <h3 class="text-xl font-roboto font-bold uppercase">Follow</h3>
+          <div class="flex flex-col gap-2 text-sm md:text-base">
+            <h3 class="text-xl font-roboto font-bold uppercase md:text-3xl">
+              Follow
+            </h3>
             <div class="flex items-center gap-2">
               <div class="footer-icon">
                 <img
@@ -276,6 +307,9 @@
         </div>
       </div>
     </footer>
+    <a href="#home" class="footer-icon scrollup w-8 h-8" id="scrollup">
+      <img src="./arrow-up-line.svg" alt="arrow up icon" width="20px" />
+    </a>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

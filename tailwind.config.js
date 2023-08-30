@@ -20,6 +20,7 @@ export default {
         promo: "url('./promo-img-removebg-preview.png')",
       },
       screens: {
+        xs: "375px",
         "3xl": "1800px",
       },
     },
