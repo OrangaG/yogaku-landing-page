@@ -15,9 +15,10 @@ export default {
     },
     extend: {
       backgroundImage: {
-        hero: "url('./hero-img.webp')",
-        about: "url('./about-us-img.webp')",
-        promo: "url('./promo-img-removebg-preview.png')",
+        hero: "url('/hero-img.webp')",
+        about: "url('/about-us-img.webp')",
+        promo: "url('/promo-img-removebg-preview.png')",
+        // You should always reference public assets using root absolute path - for example, public/icon.png should be referenced in source code as /icon.png.
       },
       screens: {
         xs: "375px",
